@@ -3,3 +3,12 @@
 <h4>{{user.age}} ans</h4>
 <h4>{{user.phone}}</h4>
 <p>{{user.about}}</p>
+
+<form action="/order/{{user._id}}" method="POST">
+	<label for="total_price">price</label>
+	<input type="text" name="total_price"/>
+
+	<div>
+		<input type="submit" value="Valider">
+	</div>
+</form>
