@@ -10,4 +10,12 @@ router.get('/', (req, res, next) => {
   })
 });
 
+
+router.get('/profile/:id', (req, res, next) => {
+  User.findOne({_id: req.params.id})
+  .then(user => {
+    res.render('profile', {user: user});
+  })
+});
+
 module.exports = router;

@@ -3,6 +3,8 @@
 
 <ul>
 {{# each users}}
-	<li> {{name}} -- {{age}} ans <a href="/profile/{{_id}}">voir profil</a></li>
+	<li> {{name}} - {{age}} ans -- 
+		<a href="/profile/{{_id}}">voir profil</a></li> 
+		<a href="/update/{{_id}}">Update profil</a>
 {{/each}}
 </ul>
